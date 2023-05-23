@@ -8,6 +8,10 @@ app.use(urlencoded({ extended: true }));
 
 const productManager = new ProductManager('./files/Products.json');
 
+app.get('/', (req, res) => {
+    res.send('Hola Tutor!');
+});
+
 app.get('/products', async (req, res) => {
     try {
         const limit = req.query.limit;
@@ -40,9 +44,6 @@ app.get('/products/:pid', async (req, res) => {
     }
 });
 
-app.get('/', (req, res) => {
-    console.log('REQ', req);
-    res.send('Hola World!');
-});
+
 
 app.listen(8080, () => console.log('Listening on port 8080\nhttp://localhost:8080'));
