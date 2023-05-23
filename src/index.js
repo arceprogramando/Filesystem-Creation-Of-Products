@@ -6,7 +6,7 @@ const app = express();
 app.use(json());
 app.use(urlencoded({ extended: true }));
 
-const productManager = new ProductManager();
+const productManager = new ProductManager('./files/Products.json');
 
 app.get('/products', async (req, res) => {
     try {
@@ -40,39 +40,9 @@ app.get('/products/:pid', async (req, res) => {
     }
 });
 
-const alumno = [
-    {
-        nombre: 'Felipe Arce',
-        edad: 23,
-        gracias: 'gracias por verificar',
-    },
-];
-
 app.get('/', (req, res) => {
     console.log('REQ', req);
     res.send('Hola World!');
-});
-
-app.get('/bienvenida', (req, res) => {
-    res.send(alumno);
-});
-
-app.get('/personas', (req, res) => {
-    const limit = req.query.limit;
-    if (limit) {
-        res.send(personas.slice(0, limit));
-    } else {
-        res.send(personas);
-    }
-});
-
-app.get('/personas/:id', (req, res) => {
-    const persona = personas.find((persona) => persona.id == req.params.id);
-    if (persona) {
-        res.send(persona);
-    } else {
-        res.status(404).send({ error: 'El producto no existe' });
-    }
 });
 
 app.listen(8080, () => console.log('Listening on port 8080\nhttp://localhost:8080'));
