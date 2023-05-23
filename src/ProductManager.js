@@ -19,7 +19,7 @@ class ProductManager {
         try {
             const data = await fs.readFile(this.filePath, 'utf-8');
             const products = JSON.parse(data);
-            const product = products.find((p) => p.id === pid);
+            const product = products.find((p) => p.id === parseInt(pid));
             return product;
         } catch (error) {
             throw new Error('Error al obtener el producto');
