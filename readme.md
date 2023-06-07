@@ -76,7 +76,10 @@ Cuarto agregamos a nuestro package.json
 
 
 ```sh
-http://localhost:8080/bienvenida
+http://localhost:8080/
+http://localhost:8080/products
+[http://localhost:8080/products?limit=n]
+http://localhost:8080/products/:id
 ```
 
 
