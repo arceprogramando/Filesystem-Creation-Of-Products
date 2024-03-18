@@ -1,93 +1,42 @@
-# Entrega proyecto Coderhouse
-## _Felipe Antonio Aleman Arce_
-### Ejercicio 3 entregable , creacion de servidor
-DESAFÍO
-Servidor con Express (Finalizado)
-[![Coderhouse](https://res.cloudinary.com/hdsqazxtw/image/upload/v1570710978/coderhouse.jpg)](https://github.com/arceprogramando)
+# Refactor Practica Coderhouse
 
-Estoy haciendo esto para poder tener un ejemplo de como hacer un readme de subida
-
-- Nuevas funcionalidades de los lenguajes ECMAScritpt✔️
-- Manejo de archivos en JavaScript✔️
 - ✨Servidor con Express✨
 
-## Desafio Entregable
-# Servidor con Express 
-### Desarrollar un servidor basado en express donde podamos hacer consultas a nuestro archivo de productos.
+## 🧞 Commands 
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             |Para instalar las dependencias necesarias del proyecto|
+| `npm run dev`             |Para inicializar los proyectos |
 
 
-- Se instalarán las dependencias a partir del comando npm install ✔️
-- Se echará a andar el servidor✔️
-- Se revisará que el archivo YA CUENTE CON AL MENOS DIEZ PRODUCTOS CREADOS al - momento de su entrega, es importante para que los tutores no tengan que crear los productos por sí mismos, y así agilizar el proceso de tu evaluación.✔️
-- Se corroborará que el servidor esté corriendo en el puerto 8080.✔️
-- Se mandará a llamar desde el navegador a la url http://localhost:8080/products sin query, eso debe devolver todos los 10 productos.✔️
-- Se mandará a llamar desde el navegador a la url http://localhost:8080/products?limit=5 , eso debe devolver sólo los primeros 5 de los 10 productos.✔️
-- Se mandará a llamar desde el navegador a la url http://localhost:8080/products/2, eso debe devolver sólo el producto con id=2.✔️
-- Se mandará a llamar desde el navegador a la url http://localhost:8080/products/34123123, al no existir el id del producto, debe devolver un objeto con un error indicando que el producto no existe.✔️
+## 🌳 Tree
 
-
-> Espero que Los ejercicios se encuentren
-> resueltos de buena forma y espero 
-> que lo haya solucionado de forma optima
-
+```text
+/
+├── files
+│       └── products.json
+├── src
+│      └── app.js
+│      └── ProductManager.js
+├── .gitignore
+├── .eslintrc.json
+└── Readme.md
+```
+## Para la nueva estructura de mis commits voy a utilizar https://www.conventionalcommits.org/en/v1.0.0/
 
 ## Herramientas
 
-Para realizar este Ejercicio
+### Para realizar este Arquitectura
 
-- [Coderhouse]  - Se vieron las clases de coderhouse Correspondientes!
-- [node.js] - Se uso Node Js
-- [Express] - Se uso la libreria Express de Node
-- [Nodemon] - Se instalo globalmente Nodemon
+- Backend
 
-Mi repositorio publico es  [arceprogramando][arceprogramando]
-en github.
+| Dependencias /Librerias | Funcionalidad                 |
+| --------------- | --------------------------------------------------------------------------- |
+| ✅ [node.js]    | Se  instalo a nivel local NodeJs.|
+| ✅ [express]   | Se uso la libreria Express de NodeJs.|
+| ✅ [nodemon] | Se utilizo nodemon para la recarga automatica del Proyecto | 
 
-## Installation
-
-Express and nodemon requires [Node.js](https://nodejs.org/) to run.
-
-Primero instalamos de [Node.js](https://nodejs.org/)  su pagina oficial.
-
-```sh
-npm i
-
-```
-
-Segundo instalamos de [Nodemon](https://nodemon.io) 
-Yo lo instale de forma global
-
-```sh
-npm install -g nodemon
-
-```
-
-Tercero instalamos [express](http://expressjs.com)
-
-```sh
-npm install express
-
-```
-Cuarto agregamos a nuestro package.json
-
-
-```sh
-"type": "module",
-```
-
-
-
-```sh
-http://localhost:8080/
-http://localhost:8080/products
-[http://localhost:8080/products?limit=n]
-http://localhost:8080/products/:id
-```
-
-
-
-  [Coderhouse]: <https://plataforma.coderhouse.com/cursos/43335/programacion-backend>
-  [arceprogramando]: <https://github.com/arceprogramando>
-  [node.js]: <http://nodejs.org>
-  [express]: <http://expressjs.com>
-  [Nodemon]: <https://nodemon.io>
+[node.js]: <http://nodejs.org>
+[express]: <http://expressjs.com>
+[Nodemon]: <https://nodemon.io>
