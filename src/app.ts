@@ -1,5 +1,5 @@
 import express from 'express';
-import ProductManager from './ProductManager.js';
+import ProductManager from './ProductManager';
 
 const app = express();
 
@@ -21,14 +21,15 @@ app.get('/', async (req, res) => {
     if (limit) return res.json(products.slice(0, limit));
     return res.json(products);
   } catch (error) {
-    return res.status(404).json({ error: error.message });
+    return res.status(404).json({ error: (error as Error).message });
   }
 });
 
 app.get('/:pid', async (req, res) => {
   try {
     const { pid } = req.params;
-    const product = await productManager.getProductById(pid);
+    const productId = parseInt(pid);
+    const product = await productManager.getProductById(productId);
 
     if (product) return res.json(product);
 
