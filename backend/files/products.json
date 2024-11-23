@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Auriculares Bluetooth",
+    "description": "Auriculares inalámbricos con cancelación de ruido",
+    "price": 29.99,
+    "thumbnail": "",
+    "code": "BT101",
+    "stock": 40
+  },
+  {
+    "id": 2,
+    "title": "Smartwatch Deportivo",
+    "description": "Reloj inteligente resistente al agua con monitor de actividad",
+    "price": 49.99,
+    "thumbnail": "",
+    "code": "SW202",
+    "stock": 25
+  },
+  {
+    "id": 3,
+    "title": "Cargador Portátil",
+    "description": "Powerbank de 10000mAh con carga rápida",
+    "price": 19.99,
+    "thumbnail": "",
+    "code": "PB303",
+    "stock": 60
+  },
+  {
+    "id": 4,
+    "title": "Teclado Mecánico RGB",
+    "description": "Teclado mecánico con retroiluminación personalizable",
+    "price": 59.99,
+    "thumbnail": "",
+    "code": "KM404",
+    "stock": 15
+  },
+  {
+    "id": 5,
+    "title": "Cámara Web Full HD",
+    "description": "Cámara web con micrófono integrado y resolución 1080p",
+    "price": 39.99,
+    "thumbnail": "",
+    "code": "CW505",
+    "stock": 20
+  },
+  {
+    "id": 6,
+    "title": "Altavoz Bluetooth",
+    "description": "Altavoz portátil con sonido estéreo y resistencia al agua",
+    "price": 24.99,
+    "thumbnail": "",
+    "code": "SP606",
+    "stock": 35
+  },
+  {
+    "id": 7,
+    "title": "Memoria USB 128GB",
+    "description": "Pendrive de alta velocidad con conexión USB 3.0",
+    "price": 14.99,
+    "thumbnail": "",
+    "code": "USB707",
+    "stock": 50
+  },
+  {
+    "id": 8,
+    "title": "Mochila Antirrobo",
+    "description": "Mochila para laptop con puerto USB de carga integrado",
+    "price": 34.99,
+    "thumbnail": "",
+    "code": "BP808",
+    "stock": 18
+  },
+  {
+    "id": 9,
+    "title": "Monitor 24 pulgadas",
+    "description": "Monitor Full HD con tecnología antirreflejo",
+    "price": 149.99,
+    "thumbnail": "",
+    "code": "MN909",
+    "stock": 10
+  },
+  {
+    "id": 10,
+    "title": "Tablet 10 pulgadas",
+    "description": "Tablet con pantalla táctil y almacenamiento de 64GB",
+    "price": 199.99,
+    "thumbnail": "",
+    "code": "TB1010",
+    "stock": 8
+  }
+]
