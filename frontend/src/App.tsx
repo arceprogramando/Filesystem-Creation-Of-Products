@@ -26,14 +26,17 @@ function App() {
 
   return (
     <>
-      <h1>Productos</h1>
-      {products.map((product: Product) => (
-        <>
-          <div key={product.id}>{product.title}</div>
-          <p>{product.description}</p>
-          <p>{product.price}</p>
-        </>
-      ))}
+      <h1 className="text-center">Productos</h1>
+      <div className="flex justify-center flex-wrap gap-4">
+        {products.map((product: Product) => (
+          <div className="product-card flex flex-col gap-4">
+            <div key={product.id}>Titulo: {product.title}</div>
+            <p>Descripción: {product.description}</p>
+            <p>Precio:{Math.round(product.price * 100) / 100}</p>
+            <p>Stock: {product.stock}</p>
+          </div>
+        ))}
+      </div>
     </>
   );
 }
